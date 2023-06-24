@@ -4,15 +4,15 @@
 
 my_array = [1, 2, 3, 4, 'teste', False, True, 0.1]
 
-print(my_array[0])  # Acessa o primeiro elemento.
+my_array[0]  # Acessa o primeiro elemento.
 
-print(my_array[-1])  # Acessa o último elemento.
+my_array[-1]  # Acessa o último elemento.
 
-print(my_array[1:3])  # Acessa o intervalo do elemento
+my_array[1:3]  # Acessa o intervalo do elemento
 
-print(my_array[150])  # Erro: Tentou acessar um elemento inexistente,
+(my_array[150] # Erro: Tentou acessar um elemento inexistente,
 
-print(len(my_array))  # Informa o número de elementos.
+len(my_array)  # Informa o número de elementos.
 
 my_array.sort() # ordena definitivamente
 
@@ -33,7 +33,7 @@ min(my_array) # Elemento com valor mínimo.
 max(my_array) # Elemento com valor máximo.
 
 my_array = [-1, 2, 3, 5, 456]
-print(my_array)
+my_array
 
 # Árvores Binárias: 
 import bisect
@@ -47,7 +47,7 @@ my_array = range(10) # Gera os indíces de acordo com o número sequêncial
 list(my_array) # Lista o array
 
 two_dimentions_array = [[123, 456], [789, 321]] # Cria um array de 2 dimensões.
-print(two_dimentions_array)
+two_dimentions_array
 
 two_dimentions_array[0][0] # Acessa o indíce 0, 0.
 two_dimentions_array[0] # Acessa a primeira linha.
@@ -56,14 +56,14 @@ two_dimentions_array[1] # Acessa a segunda linha.
 
 A = [1, 2, 3]
 B = A # Cria um ponteiro, e todas as alterações de A passam para B.
-print(A)
-print(B)
+A
+B
 B[0] = 999
 
 a = [1, 2, 3]
 b = list(a) # "Deep Copy" Faz uma cópia da lista sem alterar a principal.
-print(a)
-print(b)
+a
+b
 b[0] = 999
 
 a = [{'test': 123, 'bbb': 456}] # Lista que contém dicionários
@@ -86,7 +86,7 @@ a[1] = tmp2
 
 a[2], a[1], a[3] = a[1], a[2], a[0] # Altera a orden dos indíces sem usar variáveis temporárias.
 
-print(a)
+a
 
 
 
